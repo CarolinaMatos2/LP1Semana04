@@ -7,14 +7,13 @@ namespace BetterDecorator
     /// </summary>
     class Program
     {
-        private static string Decor(string s, char dec)
+        static string Decor(string s, char dec)
         {
             return $"{dec}{dec}{dec} {s} {dec}{dec}{dec}";
         }
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine(Decor("Good Morning!", '*'))
-            Console.WriteLine(Decor("Good Evening! ", '.'))
+            if (args.Length != 3)
         }
     }
 }
