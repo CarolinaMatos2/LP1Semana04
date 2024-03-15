@@ -7,10 +7,10 @@ namespace BetterDecorator
 {
     class Program
     {
-        static string Decor(string s, char dec)
-        {
-        
-        }
+        /// <summary>
+        /// O ponto de entrada principal do programa.
+        /// </summary>
+        /// <param name="args">Argumentos da linha de comando.</param>
         static void Main(string[] args)
         {
             if (args.Length == 0)
@@ -19,6 +19,12 @@ namespace BetterDecorator
                 ConsoleWriteLine(a);
             }
             else if (args.Length == 3)
+            {
+                string b = args[0];
+                char decora = args[1][0];
+                string resultado = Decor(b, decora);
+                Console.WriteLine(resultado);
+            }
         }
     }
 }
