@@ -1,19 +1,24 @@
 ﻿using System;
 
+/// <summary>
+/// Programa para decorar strings.
+/// </summary>
 namespace BetterDecorator
 {
-    /// <summary>
-    /// Programa para decorar uma string.
-    /// </summary>
     class Program
     {
         static string Decor(string s, char dec)
         {
-            return $"{dec}{dec}{dec} {s} {dec}{dec}{dec}";
+        
         }
         static void Main(string[] args)
         {
-            if (args.Length != 3)
+            if (args.Length == 0)
+            {
+                string a = Decor();
+                ConsoleWriteLine(a);
+            }
+            else if (args.Length == 3)
         }
     }
 }
